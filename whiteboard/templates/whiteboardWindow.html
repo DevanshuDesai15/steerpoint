@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link  href="{% static '\css\style.css' %}" rel="stylesheet">
+    <title>Whiteboard</title>
+</head>
+<body style="background-color:white ;">
+    <div class="whiteboard">
+        <img   src="{% url 'whiteboard' %}">
+    </div>
+    
+    
+</body>
+</html>

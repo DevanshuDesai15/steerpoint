@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Home Page</title>
+    <link href="{% static '\css\style.css' %}" rel="stylesheet">
+    
+    <script src="{%static '\js\script.js'%}"></script>
+</head>
+<body>
+
+    <div class="left-white">
+        <img src="{%static '\img\logo-2.png'%}">
+     
+    </div>
+
+    <div class="center">
+        <h1>Steer Point</h1>
+        <p class="description">
+            Get Started your creativity and imagination to put it <br>on the digital screen using your hands
+        </p>
+        <br>
+        <img src="{%static '\img\steerpoint.png'%}" alt="air canvas" class="aircanvasImage">
+
+        <button class="gsButton" type="submit" onclick=window.location.href="{%url 'Demopage'%}" >
+            
+           
+           <span>Get Started</span>
+        </button>
+
+
+    </div>
+    <div class="bottom-white">
+        <a class="a1 current" href="{% url 'Homepage' %}">Home</a>
+        <a class="a2" href="{%url 'Demopage'%}">Demo</a>
+        <a class="a3" href="{%url 'fromHomeWhiteboard'%}">Steer Point</a>
+    </div>
+    <div class = "popup" id = "popup-1">
+        
+        <div class = "overlay"></div>
+        <div class = "content">
+            <div class="close-btn" onclick="togglePopup()">&times</div>
+            <h1>Contact us for help</h1>
+            <table style="border: 0; margin-left:55px;">
+                <tr>
+                    <td style="text-align: left">
+                        Dhwani Anjirwala
+                    </td>
+                    <td style="padding-left: 30px">
+                        <a href = "mailto:18ce004@charusat.edu.in">18ce004@charusat.edu.in</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:left">
+                        Keya Bhavsar
+                    </td>
+                    <td style="padding-left: 30px">
+                        <a href = "mailto:18ce010@charusat.edu.in">18ce010@charusat.edu.in</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:left">
+                        Devanshu Desai
+                    </td>
+                    <td style="padding-left: 30px">
+                        <a href = "mailto:18ce020@charusat.edu.in">18ce020@charusat.edu.in</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:left">
+                        Yash Desai
+                    </td>
+                    <td style="padding-left: 30px">
+                        <a href = "mailto:18ce021@charusat.edu.in">18ce021@charusat.edu.in</a>
+                    </td>
+                </tr>
+                
+                
+
+            </table>
+        
+        </div>
+    </div>
+            <div class="line pos2"></div><!--overlay-->
+        <div class="circle position1" >
+           
+            <span class="helptiptext">Help</span>
+            
+            <img src="{%static '\img\help.png'%}" alt="share" onclick="togglePopup()">  
+               
+        </div>
+    
+    <div style="width: auto; height: auto;">
+
+    <div class="line pos1"></div>
+    <div class=queries>Any Querires</div>
+    
+    <div class="line pos3"></div>
+    <div class="circle position2" >
+        <span class="helptiptext">Gmail</span>
+        
+            <img src="{%static '\img\gmail.png'%}" id="gmail" alt="gmail" onclick=window.location.href="mailto:steerpoint6@gmail.com">
+
+    </div>
+
+
+    <div class="line pos4"></div>
+    <div class="circle position3" >
+        <span class="helptiptext">Facebook</span>
+        
+            <img src="{%static '\img\facebook.png'%}" alt="gmail" onclick=window.location.href="https://www.facebook.com/steer.point.3">
+        
+    </div>
+
+    <div class="line pos5"></div>
+    <div class="circle position4" >
+        <span class="helptiptext">Linkedin</span>
+        
+            
+            <img src="{%static '\img\linkedin.png'%}" alt="gmail" onclick=window.location.href="https://www.linkedin.com/in/steer-point-28a92a20b/">
+        
+    </div>
+</div>
+</body>
+</html>

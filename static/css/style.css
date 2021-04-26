@@ -1,0 +1,384 @@
+body {
+    background-color: #DB7070;
+    
+}
+
+.left-white {
+    
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 160px;
+    height: 400px;
+    border-radius: 0px 0px 1000px 0px;
+    box-shadow: 1px 1px 50px -10px rgb(0, 0, 0);
+    text-align: center;
+    position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/* .left-white h3{
+
+    font-family: sans-serif;
+    color: black;
+    flex-basis: 100%;
+    font-size: 20px;
+    
+} */
+
+.left-white img{
+    flex-basis: 100%;
+    top: 50%;
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.center{
+    
+    position: absolute;
+   
+    font: x-large sans-serif;
+    top: 30%;
+    left: 25%;
+}
+.center-mid{
+    position: absolute;
+    font: large sans-serif;
+    top: 10px;
+    left: 25%;
+}
+.description{
+    display:flex;
+    margin-top: -3%;
+    font: large sans-serif;
+}
+
+.gsButton{
+    padding: 10px;
+    width: 150px;
+    background-color: black;
+    font: large sans-serif;
+    color:white;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+}
+.gsButton1{
+    padding: 10px;
+    width: 150px;
+    background-color: black;
+    font: large sans-serif;
+    color:white;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative;
+    top: 35%;
+    margin-left: 250px;
+}
+.aircanvasImage{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    right: -450px;
+    top: 50px;
+    object-fit: contain;
+}
+.gsButton span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.icon{
+    content: '\00bb';
+}
+.gsButton span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: -1px;
+    right: -20px;
+    transition: 0.5s;
+}
+.gsButton:hover span{
+    padding-right: 25px;
+}
+.gsButton:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+.gsButton1 span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.gsButton1 span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: -1px;
+    right: -20px;
+    transition: 0.5s;
+}
+.gsButton1:hover span{
+    padding-right: 25px;
+}
+.gsButton1:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+.bottom-white {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 80px;
+    border-radius: 100px 0px 0px 0px;
+    box-shadow: 1px 1px 50px -10px rgb(0, 0, 0);
+    
+    position: absolute;
+   
+	bottom: 0;
+	
+	right: 0;
+}
+
+.a1{
+    text-decoration: transparent;
+    color: black;
+    flex-basis: 100%;
+    margin-top:8%;
+    margin-left: 20%;
+    font: 20px sans-serif;
+}
+.current{
+    text-decoration: underline;
+    color: #DB7070;
+}
+.a2{
+    position: absolute;
+    text-decoration: transparent;
+    color: black;
+    flex-basis: 100%;
+    margin-top:8%;
+    margin-left: 45%;
+    font: 20px sans-serif;
+}
+
+.current1{
+    text-decoration: underline;
+    color: #DB7070;
+}
+.a3{
+    position: absolute;
+    text-decoration: transparent;
+    color: black;
+    flex-basis: 100%;
+    margin-top:8%;
+    margin-left: 70%;
+    font: 20px sans-serif;
+}
+
+.current2{
+    text-decoration: underline;
+    color: #DB7070;
+}
+
+.whiteboard{
+    text-align: center;
+
+}
+.whiteboard img{
+    width: 1250px;
+    height: 700px;
+}
+
+
+.circle{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    align-content: center;
+    box-shadow: 1px 1px 20px -10px rgb(0, 0, 0);
+}
+.queries{
+    width: 100px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    font-family: sans-serif;
+    bottom: 93%;
+    right: 1%;
+    margin-left: -30px;
+  
+    transition: opacity 0.3s;
+}
+.position1 {
+    bottom: 60px;
+    left: 20px;
+}
+.position2{
+    right: 40px;
+    top: 73px;
+}
+.position3{
+    right: 40px;
+    top: 143px;
+}
+.position4{
+    right: 40px;
+    top: 213px;
+}
+
+.circle .helptiptext {
+    visibility: hidden;
+    width: 60px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -30px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .circle .helptiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0) transparent transparent transparent;
+  }
+  
+  .circle:hover .helptiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+.circle img{
+    flex-basis: 100%;
+    width: 60%;
+    height: 60%;  
+    object-fit: contain;
+    cursor: pointer;
+}
+.circle a{
+    flex-basis: 100%;
+    width: 60%;
+    height: 60%;  
+    object-fit: contain;
+}
+.line {
+    position: absolute;
+    width: 4px;
+    background:black;
+    
+    
+    
+}
+.pos2{
+    height: 60px;
+    bottom: 0px;
+    left: 43px;
+}
+.pos1 {
+    height: 30px;
+    right: 63px;
+    top:0;
+}
+
+.pos3{
+    height: 20px;
+    right: 63px;
+    top:53px;
+}
+.pos4{
+    height: 20px;
+    right: 63px;
+    top: 123px;
+}
+.pos5{
+    height: 20px;
+    right: 63px;
+    top: 193px;
+}
+ 
+/*about*/
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+   
+  .popup .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff;
+    width:500px;
+    height:250px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+  }
+   
+  .popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+  }
+   
+  .popup.active .overlay {
+    display:block;
+  }
+   
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
